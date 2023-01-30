@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Fitness website| Landing Page Design </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo">Fitness Point</a>
+                <div class="toggleMenu" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Trainer</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="contentBx">
+                    <h2>Build Perfect Body<br>With Clean Mind</h2>
+                    <p>"Your body holds deep wisdom. Trust in it.
+                        Learn from it. Nourish it.Watch your life 
+                        transform and be healthy".</p>
+                    <a href="#">"Let's  Get Started" </a>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function toggleMenu(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const navigation = document.querySelector('.navigation');
+                toggleMenu.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
